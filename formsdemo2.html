@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>forms demo2</title>
+<style>
+    .from-origin{
+        margin-bottom: 20px;
+    }
+</style>
+    </head>
+    <body>
+        <fieldset >
+            <legend align = "center">Details</legend>
+        <form>
+            <div class="from-origin">
+                <label for="user">Username</label>
+                <div>
+                    <input size="25" autofocus required minlength="4" maxlength="10"  type="text" name="user" placeholder="Name of user" >
+                </div>
+                <div class="from-origin">
+                    <label for="course">course</label>
+                    <div>
+                        <input type="text" name=" course" list="option" placeholder="optional">
+                    </div>
+                    <datalist id="option">
+                        <option>javascript</option>
+                        <option>html</option>
+                        <option>css</option>
+                        <option>lass</option>
+                        <option>Html/java</option>
+                    </datalist>
+
+                    
+                </div>
+                <div class="from-origin">
+                    <label for="DOB">Date Of Birth</label>
+                    <div>
+                        <input min="2021-04-21" max="2021-04-28" type="date" name="DOB">
+                    </div>
+
+                </div>
+            </div>
+            <div class="from-origin">
+                <button>Register</button>
+            </div>
+        </form>
+    </fieldset>
+    </body>
+</html>
