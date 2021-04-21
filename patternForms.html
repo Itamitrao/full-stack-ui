@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>pattern forms</title>
+    <style>
+        .form-bottom{
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend align = "center">Deatils</legend>
+        <form>
+            <div class="form-bottom">
+                <label for="user">user IFC</label>
+                <div>
+                    <input pattern="SBIN0000\d{3}" type="text" name="user">
+                </div>
+            </div>
+            <!-- entering mobile number with the local mobile code -->
+            <div class="form-bottom">
+                <label for="number">Mobile number</label>
+                <div>
+                    <input pattern="\+44[0-9]{10}" type="text" name="number"  >
+                </div>
+            </div>
+            <div>
+                         <label for="bank">Bank Password</label>
+                <div>
+
+              <!-- 
+                  FAQ = atleast 1 number and one upper,lowercase. aand at least 8 or more character 
+
+                    <input pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z]).{8,}" type="password" name="bank">  
+
+                  FAQ = atleast 1 uppercase character and character will min=4 max=10 
+                    <input pattern="(?=.*[A-Z]).{4,10}" type="password" name = "bank"> 
+                
+                    FAQ = at least one special charcter and chacter will be b/w 4 to 8 
+             <input pattern="(?=.*[@!#$%^&*]).{4,8}" type="password" name="bank" >
+
+             FAQ = atleast one special character , one upperchase/lower character, atleast one numeric and character wil be b\w 6 to 15
+
+                 -->
+                 <input pattern="(?=.*[!@#$%^&*])(?=.*[A_Z][a-z]\w)(?=.*[0-9]\d).{6,15}" type="password" name="bank" >
+
+
+                
+                </div>
+            </div>
+            <div class="form-bottom">
+                <button>Register</button>
+            </div>
+
+
+
+        </form>
+    </fieldset>
+</body>
+</html>
