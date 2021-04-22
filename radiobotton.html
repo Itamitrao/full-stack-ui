@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>radio button</title>
+    <style>
+ul{
+    list-style: none;
+    overflow: auto;
+}
+textarea{
+display: flex;
+margin-top: 20px;
+}
+     .term+span{
+         color: brown;
+
+}
+.term:checked+span{
+    color:green;
+}
+.group{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+
+    <fieldset>
+        <legend align ="center">Details</legend>
+        <form>
+            <!-- radio button and checkbox -->
+             <div class="group">
+                <label for="gender">Gender</label>
+                <div>
+                    <input value="male" type="radio" name="gender">Male
+                    <input value="female"  type="radio" name="genderu">Female 
+                </div>
+
+            </div> 
+            <div class="group">
+                <label for="courses">Stream</label>
+                <div>
+                    <ul>
+                        <li><input class="term" type="checkbox" name="courses"><span>I Accept</span></li>
+               <li> <input value="css" type="checkbox" name="courses">css</li>
+               <li><input value="html" type="checkbox" name="courses">html</li>
+               <li> <input value="java" type="checkbox" name="courses">Java</li>
+               <li> <input value="jquery" type="checkbox" name="courses">jquery</li>
+               <li> <input value="less" type="checkbox" name="courses">less</li>
+            </ul>
+
+            </div>
+            </div>  
+    
+                <button>Register</button>
+            </div>
+<!--  list box and drowndown menu -->
+
+            <select class="group" size="3" name=" area" multiple>
+                <optgroup label="North">
+                <option value="Delhi" >DElhi</option>
+                 <option>Rajasthan</option>
+            </optgroup>
+            <optgroup label="south">
+                <option >Bombay</option>
+                <option>Hyderbad</option>
+            </optgroup>
+            </select> 
+            <!-- textarea = mutipline text -->
+            <textarea  class="group" rows="5" cols="50">
+                i am genius person in this small world of my own . and i live my life in my own way . this is my way.
+                i am genius person in this small world of my own . and i live my life in my own way . this is my way.
+                i am genius person in this small world of my own . and i live my life in my own way . this is my way.
+                i am genius person in this small world of my own . and i live my life in my own way . this is my way.
+            </textarea>
+            <!-- files upload -->
+            <div class="group">
+                <label for="images">Images</label>
+                <div>
+                    <input type="file" name="images" accept=".jpg">
+                    <!-- accept for type of file u want to upload or acess -->
+                </div>
+            </div>
+            <div>
+                <meter min="1" max="100" value="50" low="60" high="80"></meter>
+            </div>
+            
+           
+
+        </form>
+    </fieldset>
+
+
+
+
+
+
+</body>
+</html>
